@@ -22,14 +22,16 @@
         <hr />
         <label for="category-input">Category</label>
 
-    <select style="float: right"  class="form-select" name="CategoryId" id="category-input">
-        <option  selected>Choose Category</option>
-        @foreach (var item in ViewBag.categories)
-        {
-            <option value="@item.Id">@item.Name</option>
-        }
-    </select>
-    <hr />
+        <select style="float: right" class="form-select" name="CategoryId" id="category-input">
+            <option selected>Choose Category</option>
+            @foreach (var item in ViewBag.categories)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+
+        </select>
+        <hr />
+        <label style="float: right; color: red;"> make sure that in the categories, there is at least one product</label>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

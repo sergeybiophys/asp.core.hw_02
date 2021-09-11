@@ -78,7 +78,7 @@ namespace WebApplication1.Controllers
                 return BadRequest("Category was not found");
             }
             categoryService.UpdateCategory(category);
-            // return View(categoryService.GetCategoryById(category.Id));
+    
             return RedirectToAction("Index");
         }
 

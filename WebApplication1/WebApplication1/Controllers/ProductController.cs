@@ -74,7 +74,7 @@ namespace WebApplication1.Controllers
                 return BadRequest("Product was not found");
             }
             productsService.UpdateProduct(product);
-            //return View(productsService.GetProductById(product.Id));
+
             return RedirectToAction("Index");
         }
 
