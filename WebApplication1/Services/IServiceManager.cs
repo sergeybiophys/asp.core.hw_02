@@ -9,5 +9,9 @@ namespace Services
     public interface IServiceManager
     {
         IPeopleService PeopleService { get; }
+
+        ICategoryService CategoryService { get; }
+
+        IProductService ProductService { get; }
     }
 }

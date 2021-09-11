@@ -10,6 +10,11 @@ namespace Domain.Repository
     public interface IUnitOfWork
     {
         IRepository<Guid, Person> PeopleRepository { get; }
+
+        IRepository<int, Product> ProductsRepository { get; }
+
+        IRepository<int, Category> CategoriesRepository { get; }
+
         void SaveChanges();
     }
 }

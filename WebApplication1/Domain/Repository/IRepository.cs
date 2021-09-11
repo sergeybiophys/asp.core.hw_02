@@ -16,5 +16,6 @@ namespace Domain.Repository
         void Create(TValue entity);
         void Remove(TKey id);
         void Update(TValue entity);
+
     }
 }

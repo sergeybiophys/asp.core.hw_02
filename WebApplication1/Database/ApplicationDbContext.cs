@@ -12,6 +12,10 @@ namespace Infrastructure.Database
     {
         public DbSet<Person> People { get; set; }
 
+        public DbSet<Category> Category { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

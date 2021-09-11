@@ -31,11 +31,17 @@ namespace WebApplication1
             services.AddControllersWithViews();
 
             services.AddScoped<IServiceManager, ServiceManager>();
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddTransient<IWebPeopleService, WebPeopleService>();
 
+            services.AddTransient<IWebCategoryService, WebCategoryService>();
+
+            services.AddTransient<IWebProductsService, WebProductsService>();
+
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
             services.AddDbContextPool<ApplicationDbContext>(optns =>
             {
                 optns.UseSqlServer(connectionString);

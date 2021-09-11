@@ -83,3 +83,17 @@ body {
 .people-list .person-actions {
     text-align: center;
 }
+
+.category-info {
+    margin: 15px;
+}
+.category-action {
+
+    text-align:center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+}

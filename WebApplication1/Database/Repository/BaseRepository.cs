@@ -34,5 +34,7 @@ namespace Infrastructure.Database.Repository
         public abstract void Remove(TKey id);
 
         public abstract void Update(TValue entity);
+
+        
     }
 }
